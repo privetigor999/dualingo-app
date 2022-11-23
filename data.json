@@ -1,0 +1,388 @@
+[
+  {
+    "lang": "en",
+    "questions": [
+      {
+        "id": 1,
+        "description": "Медвежонок Рилаккума хочет сказать по-английски, как его зовут. Помогите ему.",
+        "question": "Меня зовут Рилаккума",
+        "answer": "My name is Rilakkuma",
+        "image": "https://sun9-east.userapi.com/sun9-22/s/v1/ig2/sr_EbujQ7rOldIygm5cUa9PJ8QAiUk0XqP4lwScrL0IgRI8dyBfDlhSSkrpPCInqRSwJyPrGZhsboJhehIZyEuVx.jpg?size=511x512&quality=95&type=album",
+        "words": [
+          {
+            "id": 1,
+            "word": "is",
+            "isPicked": false
+          },
+          {
+            "id": 2,
+            "word": "My",
+            "isPicked": false
+          },
+          {
+            "id": 3,
+            "word": "name",
+            "isPicked": false
+          },
+          {
+            "id": 4,
+            "word": "Rilakkuma",
+            "isPicked": false
+          }
+        ],
+        "correctAnswer": [2, 3, 1, 4]
+      },
+      {
+        "id": 2,
+        "description": "Отлично! Рилаккума теперь не может уснуть, потомучто он хотел сказать тебе о своем возрасте, чтобы с тобой познакомиться!",
+        "question": "Мне 10 лет",
+        "answer": "I am ten years old",
+        "image": "https://sun9-north.userapi.com/sun9-80/s/v1/ig2/1yvMYWiX6Q_AjP3HNT9D_oUqrdYaI3IM9mDLh7VG1_jT61dCwuOkfZcfIL4WwJheWX0iLH2FN8Hd-BpgKrz2FS8d.jpg?size=600x523&quality=95&type=album",
+        "words": [
+          {
+            "id": 1,
+            "word": "am",
+            "isPicked": false
+          },
+          {
+            "id": 2,
+            "word": "old",
+            "isPicked": false
+          },
+          {
+            "id": 3,
+            "word": "I",
+            "isPicked": false
+          },
+          {
+            "id": 4,
+            "word": "ten",
+            "isPicked": false
+          },
+          {
+            "id": 5,
+            "word": "years",
+            "isPicked": false
+          }
+        ],
+        "correctAnswer": [3, 1, 4, 5, 2]
+      },
+      {
+        "id": 3,
+        "description": "Вы очень нравитесь Рилакумме! Давайте еще переведем фразу вместе!",
+        "question": "Я люблю всем помогать",
+        "answer": "I like to help everyone",
+        "image": "https://sun9-west.userapi.com/sun9-13/s/v1/ig2/yNlz0fJ5IRJTthvXzxIlZpLmMRAXJhSa7DBQXLJAahmmIGMz42eArr1D15nwbEd235R-lGJYxHOYtIdJX-losYyh.jpg?size=600x521&quality=95&type=album",
+        "words": [
+          {
+            "id": 1,
+            "word": "I",
+            "isPicked": false
+          },
+          {
+            "id": 2,
+            "word": "to",
+            "isPicked": false
+          },
+          {
+            "id": 3,
+            "word": "everyone",
+            "isPicked": false
+          },
+          {
+            "id": 4,
+            "word": "like",
+            "isPicked": false
+          },
+          {
+            "id": 5,
+            "word": "help",
+            "isPicked": false
+          }
+        ],
+        "correctAnswer": [1, 4, 2, 5, 3]
+      },
+      {
+        "id": 4,
+        "description": "У Рилаккумы есть два друга. Это канарейка по имени Киироитори и белая медведица Корилаккума. Уверен, у тебя тоже есть друзья.",
+        "question": "У меня есть несколько хороших друзей",
+        "answer": "I have some good friends",
+        "image": "https://sun9-east.userapi.com/sun9-21/s/v1/ig2/SDZyPhGpk1YOUmKZMXYxKrtU43MsXRw0VZyzH-Vtqs2sJ2Duluv3QL5kTF3b8wxCbAw8Mo8sf2TSRGc6XdmvoiVV.jpg?size=847x563&quality=95&type=album",
+        "words": [
+          {
+            "id": 1,
+            "word": "friends",
+            "isPicked": false
+          },
+          {
+            "id": 2,
+            "word": "have",
+            "isPicked": false
+          },
+          {
+            "id": 3,
+            "word": "good",
+            "isPicked": false
+          },
+          {
+            "id": 4,
+            "word": "some",
+            "isPicked": false
+          },
+          {
+            "id": 5,
+            "word": "I",
+            "isPicked": false
+          }
+        ],
+        "correctAnswer": [5, 2, 4, 3, 1]
+      },
+      {
+        "id": 5,
+        "description": "Вместе со своими друзьями Рилаккума любит готовить еду. А ты любишь готовить?",
+        "question": "Мне нравится готовить по утрам",
+        "answer": "I like to cook in the morning",
+        "image": "https://sun9-east.userapi.com/sun9-21/s/v1/ig2/6MBk2lj4IaGZrhHbOTjqp97olO3KdTi_5zkKfcHRBtBPga8xKgC3uB-5ds52eFrJA-YaSxP8k9ZFiryxUMJm8eid.jpg?size=800x535&quality=95&type=album",
+        "words": [
+          {
+            "id": 1,
+            "word": "like",
+            "isPicked": false
+          },
+          {
+            "id": 2,
+            "word": "the",
+            "isPicked": false
+          },
+          {
+            "id": 3,
+            "word": "morning",
+            "isPicked": false
+          },
+          {
+            "id": 4,
+            "word": "cook",
+            "isPicked": false
+          },
+          {
+            "id": 5,
+            "word": "I",
+            "isPicked": false
+          },
+          {
+            "id": 6,
+            "word": "to",
+            "isPicked": false
+          },
+          {
+            "id": 7,
+            "word": "in",
+            "isPicked": false
+          }
+        ],
+        "correctAnswer": [5, 1, 6, 4, 7, 2, 3]
+      },
+      {
+        "id": 6,
+        "description": "Немного о моих друзьях. Корилаккума любит рисовать по вечерам. Кстати, сможешь сказать эту фразу?",
+        "question": "Корилаккума любит рисовать по вечерам",
+        "answer": "Korilakkuma likes to draw in the evenings",
+        "image": "https://sun9-west.userapi.com/sun9-5/s/v1/ig2/GMmTsW5kMMWHCYupIyPT1yZoUhlWUfla3oZC7CwBwBehIzfTOJgO0HSJ3yLJLE6EfnKI9Uv7lN4ob7BoJ5epuSJz.jpg?size=519x600&quality=95&type=album",
+        "words": [
+          {
+            "id": 1,
+            "word": "Korilakkuma",
+            "isPicked": false
+          },
+          {
+            "id": 2,
+            "word": "in",
+            "isPicked": false
+          },
+          {
+            "id": 3,
+            "word": "likes",
+            "isPicked": false
+          },
+          {
+            "id": 4,
+            "word": "evenings",
+            "isPicked": false
+          },
+          {
+            "id": 5,
+            "word": "the",
+            "isPicked": false
+          },
+          {
+            "id": 6,
+            "word": "to",
+            "isPicked": false
+          },
+          {
+            "id": 7,
+            "word": "draw",
+            "isPicked": false
+          }
+        ],
+        "correctAnswer": [1, 3, 6, 7, 2, 5, 4]
+      },
+      {
+        "id": 7,
+        "description": "А ещё Корилаккума вместе с канарейкой Киироитори любят путешествовать. Последний раз мы ездили на море.",
+        "question": "Мы любим путешествовать вместе",
+        "answer": "We like to travel together",
+        "image": "https://sun9-north.userapi.com/sun9-80/s/v1/ig2/_cq6krJwfvy5mfTf8AFwN7taljIGpuAicKW0xE9dVHqBLAGkyLIgHarYr3dLozc0KMxDC_nuLFBWJQpmISlgBwty.jpg?size=506x600&quality=95&type=album",
+        "words": [
+          {
+            "id": 1,
+            "word": "like",
+            "isPicked": false
+          },
+          {
+            "id": 2,
+            "word": "travel",
+            "isPicked": false
+          },
+          {
+            "id": 3,
+            "word": "together",
+            "isPicked": false
+          },
+          {
+            "id": 4,
+            "word": "to",
+            "isPicked": false
+          },
+          {
+            "id": 5,
+            "word": "We",
+            "isPicked": false
+          }
+        ],
+        "correctAnswer": [5, 1, 4, 2, 3]
+      },
+
+      {
+        "id": 8,
+        "description": "А еще мы любим танцевать. На этой фотографии мы танцуем в Африке!",
+        "question": "Иногда мне нравится танцевать на улице",
+        "answer": "Sometimes I like to dance outside",
+        "image": "https://sun9-west.userapi.com/sun9-39/s/v1/ig2/FHOxqGHqrWQFYhQb2yNfIuekoRelodmZ1fIpcFAK9UaEKhETCtqSgJ5vNConV2bqv01lEHk6ztcqhAr8Mwwaxjt8.jpg?size=599x438&quality=95&type=album",
+        "words": [
+          {
+            "id": 1,
+            "word": "like",
+            "isPicked": false
+          },
+          {
+            "id": 2,
+            "word": "dance",
+            "isPicked": false
+          },
+          {
+            "id": 3,
+            "word": "Sometimes",
+            "isPicked": false
+          },
+          {
+            "id": 4,
+            "word": "to",
+            "isPicked": false
+          },
+          {
+            "id": 5,
+            "word": "outside",
+            "isPicked": false
+          },
+          {
+            "id": 6,
+            "word": "I",
+            "isPicked": false
+          }
+        ],
+        "correctAnswer": [3, 6, 1, 4, 2, 5]
+      },
+      {
+        "id": 9,
+        "description": "Рилаккума любит иногда петь. Он слушает всё: от классической музыки до рока!",
+        "question": "Мне нравится классика и рок-музыка",
+        "answer": "I like classical and rock music",
+        "image": "https://sun9-west.userapi.com/sun9-5/s/v1/ig2/lKsdQvi874Yd-K8oIDbb_H-I9xWjHvxlYQgfraBC2Qr0cap_bZzEo7F1WprElS_XX2PDPjGM5nrsJfVrYiaxixGi.jpg?size=600x600&quality=95&type=album",
+        "words": [
+          {
+            "id": 1,
+            "word": "and",
+            "isPicked": false
+          },
+          {
+            "id": 2,
+            "word": "music",
+            "isPicked": false
+          },
+          {
+            "id": 3,
+            "word": "like",
+            "isPicked": false
+          },
+          {
+            "id": 4,
+            "word": "I",
+            "isPicked": false
+          },
+          {
+            "id": 5,
+            "word": "classical",
+            "isPicked": false
+          },
+          {
+            "id": 6,
+            "word": "rock",
+            "isPicked": false
+          }
+        ],
+        "correctAnswer": [4, 3, 5, 1, 6, 2]
+      },
+      {
+        "id": 10,
+        "description": "Наше обучение подошло к концу! Будем рады тебя видеть на уроках других языков!",
+        "question": "Я обязательно пройду другие уроки",
+        "answer": "I will definitely take other lessons",
+        "image": "https://sun9-east.userapi.com/sun9-29/s/v1/ig2/Bz0HFmYm8Dtmv2l6ZSXk_RP7ASXEoAeELSKv06sWfeHzGmA7Fo-FtWEFVfV8HriT3EhP5map7UWdPfNsAshS-SaE.jpg?size=850x483&quality=95&type=album",
+        "words": [
+          {
+            "id": 1,
+            "word": "I",
+            "isPicked": false
+          },
+          {
+            "id": 2,
+            "word": "lessons",
+            "isPicked": false
+          },
+          {
+            "id": 3,
+            "word": "will",
+            "isPicked": false
+          },
+          {
+            "id": 4,
+            "word": "definitely",
+            "isPicked": false
+          },
+          {
+            "id": 5,
+            "word": "other",
+            "isPicked": false
+          },
+          {
+            "id": 6,
+            "word": "take",
+            "isPicked": false
+          }
+        ],
+        "correctAnswer": [1, 3, 4, 6, 5, 2]
+      }
+    ]
+  }
+]

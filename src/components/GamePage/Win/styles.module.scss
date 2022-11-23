@@ -1,0 +1,110 @@
+.win {
+  position: absolute;
+  width: inherit;
+  min-height: 100vh;
+  background-color: #000000;
+  opacity: 0.4;
+  border-radius: inherit;
+}
+.container {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  border: 6px solid #6db2ff;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  .taskBlock {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .task {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      img {
+        width: 24px;
+        margin-right: 10px;
+      }
+      p {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+    .task:first-child {
+      margin-bottom: 12px;
+    }
+  }
+  .progress {
+    width: 300px;
+
+    .lvl {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: inherit;
+      padding: 10px 100px 0;
+      margin-top: 14px;
+      @keyframes rotate {
+        from {
+          transform: rotate(5deg);
+        }
+        to {
+          transform: rotate(-5deg);
+        }
+      }
+      @keyframes scale {
+        from {
+          transform: scale(90%);
+        }
+        to {
+          transform: scale(110%);
+        }
+      }
+      img {
+        width: 80px;
+      }
+      .lvlImg,
+      .lvlUp {
+        animation-direction: alternate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      .lvlImg {
+        animation-name: rotate;
+      }
+      .lvlUp {
+        animation-name: scale;
+      }
+    }
+  }
+  button {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: #6db2ff;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+    transition: transform 0.15s ease-in-out;
+    cursor: pointer;
+  }
+  button:hover {
+    box-shadow: 2px 2px 4px rgba($color: #000000, $alpha: 0.3);
+    transform: scale(104%);
+  }
+  button:active {
+    color: var(--blue);
+    background-color: #eeeeee;
+    border: 2px solid #6db2ff;
+  }
+}

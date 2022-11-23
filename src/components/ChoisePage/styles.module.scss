@@ -1,0 +1,190 @@
+.choice {
+  z-index: 3;
+  width: inherit;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  position: relative;
+  .title {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  .listCountries {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .listItem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 400px;
+      height: 50px;
+      border-radius: 18px;
+      color: var(--blue);
+      background-color: #ffffff;
+      font-weight: 600;
+      z-index: 1;
+      cursor: pointer;
+      border: 1px solid #6db2ff;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      transition: transform 0.1s ease-in-out;
+      .flagIcon {
+        width: 30px;
+        margin-right: 20px;
+      }
+    }
+    .activeCountry {
+      background-color: rgb(147, 206, 179);
+      color: #ffffff;
+    }
+    .listItem:first-child {
+      margin-top: 30px;
+    }
+    .listItem:last-child {
+      margin-bottom: 0;
+    }
+    .listItem:hover {
+      box-shadow: 2px 2px 4px rgba($color: #000000, $alpha: 0.3);
+      transform: scale(104%);
+    }
+    .listItem:active {
+      color: darken($color: #6db2ff, $amount: 8);
+    }
+  }
+  .nameBlock {
+    h6 {
+      font-weight: 700;
+      font-size: 30px;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      z-index: 1;
+    }
+    .name {
+      input {
+        width: 300px;
+        height: 50px;
+        font-size: 30px;
+        border: 1px solid #6db2ff;
+        border-radius: 10px;
+        padding: 0 10px;
+        z-index: 1;
+        outline: none;
+      }
+      input:focus {
+        box-shadow: 2px 2px 4px rgba($color: #000000, $alpha: 0.3);
+      }
+      input::placeholder {
+        color: #c2dcfb;
+      }
+    }
+  }
+  .soundBlock {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    h6 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 30px;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-right: 20px;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .soundButton {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 50px;
+        border-radius: 18px;
+        color: var(--blue);
+        background-color: #ffffff;
+        border: none;
+        font-weight: 600;
+        z-index: 1;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: transform 0.15s ease-in-out;
+      }
+      button:first-child {
+        margin-right: 10px;
+      }
+      button:hover {
+        box-shadow: 2px 2px 4px rgba($color: #000000, $alpha: 0.3);
+        transform: scale(104%);
+      }
+      button:active {
+        color: darken($color: #6db2ff, $amount: 8);
+      }
+      .activeSoundBtn {
+        outline: 2px solid #6db2ff;
+        outline-offset: -4px;
+        border-radius: 18px;
+        outline-style: auto;
+      }
+    }
+  }
+  .buttonBlock {
+    height: 80px;
+    position: relative;
+    button {
+      border: none;
+      width: 400px;
+      height: 50px;
+      font-size: 20px;
+      border-radius: 18px;
+      background: #ffffff;
+      color: var(--blue);
+      z-index: 1;
+      cursor: pointer;
+      transition: transform 0.15s ease-in-out;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    button:hover {
+      box-shadow: 2px 2px 4px rgba($color: #000000, $alpha: 0.3);
+      transform: scale(104%);
+      color: lighten($color: #6db2ff, $amount: 6);
+    }
+    button:active {
+      color: darken($color: #6db2ff, $amount: 8);
+    }
+    button:disabled {
+      cursor: no-drop;
+      box-shadow: none;
+      transform: none;
+      background: #c2c2c2;
+      color: var(--blue);
+    }
+    .langError {
+      color: rgb(220, 72, 46);
+      text-align: center;
+      margin-bottom: 4px;
+      font-size: 18px;
+      width: 300px;
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

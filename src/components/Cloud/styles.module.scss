@@ -1,0 +1,40 @@
+.cloud {
+  right: 100%;
+  top: 10px;
+  position: absolute;
+  height: 120px;
+  -webkit-animation: move-left infinite 30s linear;
+  animation: move-left infinite 30s linear;
+  z-index: 0;
+  overflow: hidden;
+}
+@keyframes move-left {
+  0% {
+    right: -10%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+.hello {
+  position: absolute;
+  left: -30%;
+  top: 0;
+  height: 100vh;
+  z-index: 1;
+  -webkit-animation: hello-move 1 3s linear;
+  animation: hello-move 1 3s linear;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+  cursor: pointer;
+  overflow: hidden;
+}
+@keyframes hello-move {
+  0% {
+    left: -30%;
+  }
+  100% {
+    left: 0%;
+  }
+}

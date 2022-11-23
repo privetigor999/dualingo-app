@@ -1,0 +1,21 @@
+.description {
+  width: 800px;
+  padding: 0 70px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  img {
+    width: 240px;
+    max-height: 200px;
+    object-fit: contain;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    font-weight: 400;
+    font-size: 23px;
+    text-align: center;
+  }
+}

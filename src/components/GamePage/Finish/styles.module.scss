@@ -1,0 +1,66 @@
+.finishContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  h2 {
+    color: #000000;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-family: "Fredoka One", cursive;
+    text-transform: uppercase;
+    color: var(--blue);
+  }
+
+  p {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .description {
+    width: 660px;
+    height: 245px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 300px;
+      height: 245px;
+    }
+    .title {
+      width: 300px;
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+  }
+  .sounds {
+    display: flex;
+    width: 330px;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 30px;
+    .sound {
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+      background-color: #6db2ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10%;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      transition: transform 0.15s ease-in-out;
+      img {
+        width: 50px;
+      }
+    }
+    .sound:hover {
+      transform: scale(105%);
+      background-color: #82bbfb;
+      box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.2);
+    }
+  }
+}
