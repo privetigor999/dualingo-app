@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dualingo-app/static/css/main.e01185bd.css",
-    "main.js": "/dualingo-app/static/js/main.af482bbe.js",
+    "main.css": "/dualingo-app/static/css/main.40aef9f1.css",
+    "main.js": "/dualingo-app/static/js/main.9ba03b91.js",
     "static/js/845.ed849d71.chunk.js": "/dualingo-app/static/js/845.ed849d71.chunk.js",
     "static/media/sound5.wav": "/dualingo-app/static/media/sound5.d84f2b15a5ad2eef7f64.wav",
     "static/media/finish.png": "/dualingo-app/static/media/finish.1a2b3bcb2e247d8fc4ec.png",
@@ -41,12 +41,12 @@
     "static/media/close.svg": "/dualingo-app/static/media/close.e4841c43b96a821fa7bf0254d7f5ec8a.svg",
     "index.html": "/dualingo-app/index.html",
     "static/media/cloud.svg": "/dualingo-app/static/media/cloud.cc5f9dcecd679f7b31c89120b30d774c.svg",
-    "main.e01185bd.css.map": "/dualingo-app/static/css/main.e01185bd.css.map",
-    "main.af482bbe.js.map": "/dualingo-app/static/js/main.af482bbe.js.map",
+    "main.40aef9f1.css.map": "/dualingo-app/static/css/main.40aef9f1.css.map",
+    "main.9ba03b91.js.map": "/dualingo-app/static/js/main.9ba03b91.js.map",
     "845.ed849d71.chunk.js.map": "/dualingo-app/static/js/845.ed849d71.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e01185bd.css",
-    "static/js/main.af482bbe.js"
+    "static/css/main.40aef9f1.css",
+    "static/js/main.9ba03b91.js"
   ]
 }
