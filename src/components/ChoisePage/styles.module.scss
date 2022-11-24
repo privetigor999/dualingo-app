@@ -146,35 +146,46 @@
   .buttonBlock {
     height: 80px;
     position: relative;
-    button {
-      border: none;
+    .buttons {
       width: 400px;
-      height: 50px;
-      font-size: 20px;
-      border-radius: 18px;
-      background: #ffffff;
-      color: var(--blue);
-      z-index: 1;
-      cursor: pointer;
-      transition: transform 0.15s ease-in-out;
-      text-align: center;
-      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      button {
+        border: none;
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 18px;
+        background: #ffffff;
+        color: var(--blue);
+        z-index: 1;
+        cursor: pointer;
+        transition: transform 0.15s ease-in-out;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      button:hover {
+        box-shadow: 2px 2px 4px rgba($color: #000000, $alpha: 0.3);
+        transform: scale(104%);
+        color: lighten($color: #6db2ff, $amount: 6);
+      }
+      button:active {
+        color: darken($color: #6db2ff, $amount: 8);
+      }
+      button:disabled {
+        cursor: no-drop;
+        box-shadow: none;
+        transform: none;
+        background: #c2c2c2;
+        color: var(--blue);
+      }
+      button:first-child {
+        margin-right: 20px;
+      }
     }
-    button:hover {
-      box-shadow: 2px 2px 4px rgba($color: #000000, $alpha: 0.3);
-      transform: scale(104%);
-      color: lighten($color: #6db2ff, $amount: 6);
-    }
-    button:active {
-      color: darken($color: #6db2ff, $amount: 8);
-    }
-    button:disabled {
-      cursor: no-drop;
-      box-shadow: none;
-      transform: none;
-      background: #c2c2c2;
-      color: var(--blue);
-    }
+
     .langError {
       color: rgb(220, 72, 46);
       text-align: center;

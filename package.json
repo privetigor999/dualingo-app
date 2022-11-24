@@ -1,6 +1,7 @@
 {
   "name": "dualingo-app",
   "version": "0.1.0",
+  "homepage": "https://privetigor999.github.io/dualingo-app/",
   "private": true,
   "dependencies": {
     "@ramonak/react-progress-bar": "^5.0.3",
@@ -17,12 +18,17 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "react-scripts": "5.0.1",
+    "react-speech-kit": "^3.0.1",
+    "redux-deep-persist": "^1.0.6",
+    "redux-persist": "^6.0.0",
     "sass": "^1.56.1",
     "typescript": "^4.9.3",
     "use-sound": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -45,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

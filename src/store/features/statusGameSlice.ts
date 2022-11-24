@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { store } from "../store";
+import { IStatus } from "./../../types/statusGame";
 
-const initialState = {
+const initialState: IStatus = {
   status: "welcome",
-  name: "nick",
+  name: "",
   lang: null,
 };
 

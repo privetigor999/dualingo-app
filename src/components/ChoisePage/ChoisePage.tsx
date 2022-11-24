@@ -5,6 +5,7 @@ import {
   setLanguage,
   setStartGame,
 } from "../../store/features/statusGameSlice";
+import { setNewGame, setIsFinished } from "../../store/features/questionSlice";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux-hooks";
 import { setToggleSound } from "../../store/features/soundSlice";
 
@@ -26,7 +27,10 @@ interface ICountries {
 export const ChoisePage: React.FC = () => {
   const dispatch = useAppDispatch();
   const [valueSound, setValueSound] = React.useState(1);
+  const [inputName, setInputName] = React.useState("");
+  const [langError, setLangError] = React.useState(false);
   const { toggleSound } = useAppSelector((state) => state.sound);
+  const { lang, name } = useAppSelector((state) => state.start);
   const volume = toggleSound ? { volume: 0.6 } : { volume: 0 };
   const [play] = useSound(soundUrl, volume);
   const [click] = useSound(clickMenuUrl, volume);
@@ -54,13 +58,12 @@ export const ChoisePage: React.FC = () => {
   const [pickedCountry, setPickedCountry] = React.useState<
     ICountries["id"] | null
   >(null);
-  const [name, setNewName] = React.useState("");
-  const [langError, setLangError] = React.useState(false);
+
   const changeSetName = (e: React.ChangeEvent<HTMLInputElement>): void => {
     if (e.target.value.trim()) {
-      return setNewName(e.target.value);
+      return setInputName(e.target.value);
     }
-    setNewName("");
+    setInputName("");
   };
 
   const countries = [
@@ -87,12 +90,19 @@ export const ChoisePage: React.FC = () => {
   const clickStartBtn: React.MouseEventHandler<HTMLButtonElement> = () => {
     click();
     if (pickedCountry === 2) {
+      dispatch(setNewGame());
       dispatch(setLanguage(pickedCountry));
-      dispatch(setName(name));
+      dispatch(setName(inputName));
       dispatch(setStartGame("game"));
+      dispatch(setIsFinished());
     } else {
       setLangError(true);
     }
+  };
+
+  const clickContinueBtn = () => {
+    click();
+    dispatch(setStartGame("game"));
   };
 
   const clickCountry = (id: number) => {
@@ -133,8 +143,8 @@ export const ChoisePage: React.FC = () => {
         <div className={styles.name}>
           <input
             type="text"
-            placeholder="name..."
-            value={name}
+            placeholder="for new game..."
+            value={inputName}
             onChange={changeSetName}
           />
         </div>
@@ -162,9 +172,20 @@ export const ChoisePage: React.FC = () => {
         {langError && (
           <p className={styles.langError}>Only English is working now</p>
         )}
-        <button disabled={!name || !pickedCountry} onClick={clickStartBtn}>
-          Go to first task
-        </button>
+        <div className={styles.buttons}>
+          {lang && (
+            <button onClick={clickContinueBtn} onMouseEnter={() => play()}>
+              continue
+            </button>
+          )}
+          <button
+            disabled={!inputName || !pickedCountry}
+            onClick={clickStartBtn}
+            onMouseEnter={() => play()}
+          >
+            new game
+          </button>
+        </div>
       </div>
     </div>
   );

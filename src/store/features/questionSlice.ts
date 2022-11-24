@@ -52,8 +52,17 @@ const questionSlice = createSlice({
     setStatus(state, action) {
       state.status = action.payload;
     },
+    setNewGame(state) {
+      state.level = 1;
+      state.experience = 0;
+      state.countError = 0;
+      state.currentIndexQuestion = 0;
+    },
     setErrorMessage(state, action) {
       state.errorMessage = action.payload;
+    },
+    setIsFinished(state) {
+      state.isFinished = false;
     },
     updateCurentQuestion(state, action) {
       const filtered = state.currentQuestion.words.find(
@@ -139,5 +148,7 @@ export const {
   checkIsCorrect,
   updateExperience,
   setIsShowExitWindow,
+  setNewGame,
+  setIsFinished,
 } = questionSlice.actions;
 export default questionSlice.reducer;

@@ -24,6 +24,7 @@ import levelUpPng from "./../../../assets/images/level-up.png";
 
 import lvlCompletedSound from "./../../../assets/sounds/level-completed.mp3";
 import clickMenuUrl from "./../../../assets/sounds/clickMenu.mp3";
+
 export const Win = () => {
   const dispatch = useAppDispatch();
   const { experience, level, data, currentIndexQuestion } = useAppSelector(

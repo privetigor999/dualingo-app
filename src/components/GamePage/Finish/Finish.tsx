@@ -1,6 +1,8 @@
 import React from "react";
 import { useAppSelector } from "../../../hooks/redux-hooks";
 import useSound from "use-sound";
+//@ts-ignore
+import { useSpeechSynthesis } from "react-speech-kit";
 
 import styles from "./styles.module.scss";
 import finishPng from "./../../../assets/images/finish.png";
@@ -19,6 +21,8 @@ import sound6 from "./../../../assets/sounds/drum/sound6.wav";
 
 export const Finish: React.FC = () => {
   const { countError } = useAppSelector((state) => state.question);
+  const { toggleSound } = useAppSelector((state) => state.sound);
+  const { speak } = useSpeechSynthesis();
   const sounds = [
     {
       id: 1,
@@ -51,6 +55,8 @@ export const Finish: React.FC = () => {
       image: img6,
     },
   ];
+  const winnerText =
+    "Рилаккуме понравилось с тобой иметь дело! Он научился разговаривать по-английски вместе с тобой! В честь этого Рилаккума предлагает тебе сыграть на своих инструментах! Сыграй для Рилаккумы мелодию!";
 
   let [play1] = useSound(sounds[0].sound);
   let [play2] = useSound(sounds[1].sound);
@@ -76,10 +82,15 @@ export const Finish: React.FC = () => {
       </p>
       <div className={styles.description}>
         <img src={finishPng} alt="img" />
-        <p className={styles.title}>
-          Рилаккуме понравилось с тобой иметь дело! Он научился разговаривать
-          по-английски вместе с тобой! В честь этого Рилаккума предлагает тебе
-          сыграть на своих инструментах! Сыграй для Рилаккумы мелодию!
+        <p
+          className={styles.title}
+          onClick={
+            toggleSound
+              ? () => speak({ text: winnerText, rate: 0.9 })
+              : undefined
+          }
+        >
+          {winnerText}
         </p>
       </div>
       <div className={styles.sounds}>

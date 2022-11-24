@@ -12,7 +12,7 @@ export interface IQuestions {
   data: ICurrentQuestion[];
   currentIndexQuestion: number;
   currentQuestion: any;
-  status: string;
+  status: "loading" | "error" | "fulfilled" | "";
   errorMessage: string;
   isCorrect: boolean;
   level: number;
