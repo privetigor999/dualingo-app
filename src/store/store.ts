@@ -17,7 +17,6 @@ import soundSlice from "./features/soundSlice";
 const persistConfig = {
   key: "root",
   storage,
-  blacklist: ["start"],
 };
 
 const rootReducer = combineReducers({
