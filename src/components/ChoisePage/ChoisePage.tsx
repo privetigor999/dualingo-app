@@ -30,10 +30,13 @@ export const ChoisePage: React.FC = () => {
   const [inputName, setInputName] = React.useState("");
   const [langError, setLangError] = React.useState(false);
   const { toggleSound } = useAppSelector((state) => state.sound);
-  const { lang, name } = useAppSelector((state) => state.start);
+  const { lang } = useAppSelector((state) => state.start);
   const volume = toggleSound ? { volume: 0.6 } : { volume: 0 };
   const [play] = useSound(soundUrl, volume);
   const [click] = useSound(clickMenuUrl, volume);
+  const [pickedCountry, setPickedCountry] = React.useState<
+    ICountries["id"] | null
+  >(null);
 
   const soundsItems = [
     {
@@ -55,9 +58,6 @@ export const ChoisePage: React.FC = () => {
     dispatch(setToggleSound(bool));
     setValueSound(id);
   };
-  const [pickedCountry, setPickedCountry] = React.useState<
-    ICountries["id"] | null
-  >(null);
 
   const changeSetName = (e: React.ChangeEvent<HTMLInputElement>): void => {
     if (e.target.value.trim()) {

@@ -1,0 +1,19 @@
+.loadingContainer {
+  width: inherit;
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      color: var(--blue);
+      font-size: 40px;
+      margin-right: 40px;
+      text-transform: uppercase;
+      font-family: "Fredoka One", cursive;
+    }
+  }
+}

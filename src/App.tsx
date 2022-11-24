@@ -7,7 +7,7 @@ import { GamePage } from "./components/GamePage/GamePage";
 
 function App() {
   const { status } = useAppSelector((state) => state.start);
-  const { currentQuestion } = useAppSelector((state) => state.question);
+
   return (
     <div className="App">
       {status === "welcome" && <WelcomePage />}
