@@ -141,7 +141,7 @@
         "id": 5,
         "description": "Вместе со своими друзьями Рилаккума любит готовить еду. А ты любишь готовить?",
         "question": "Мне нравится готовить по утрам",
-        "answer": "I like to cook in the morning",
+        "answer": "I like cooking in the morning",
         "image": "https://sun9-east.userapi.com/sun9-21/s/v1/ig2/6MBk2lj4IaGZrhHbOTjqp97olO3KdTi_5zkKfcHRBtBPga8xKgC3uB-5ds52eFrJA-YaSxP8k9ZFiryxUMJm8eid.jpg?size=800x535&quality=95&type=album",
         "words": [
           {
@@ -161,7 +161,7 @@
           },
           {
             "id": 4,
-            "word": "cook",
+            "word": "cooking",
             "isPicked": false
           },
           {
@@ -171,16 +171,11 @@
           },
           {
             "id": 6,
-            "word": "to",
-            "isPicked": false
-          },
-          {
-            "id": 7,
             "word": "in",
             "isPicked": false
           }
         ],
-        "correctAnswer": [5, 1, 6, 4, 7, 2, 3]
+        "correctAnswer": [5, 1, 4, 6, 2, 3]
       },
       {
         "id": 6,

@@ -5,7 +5,7 @@ import { useSpeechSynthesis } from "react-speech-kit";
 
 import styles from "./styles.module.scss";
 
-export const Description = () => {
+export const Description: React.FC = () => {
   const { currentQuestion } = useAppSelector((state) => state.question);
   const { toggleSound } = useAppSelector((state) => state.sound);
   const { speak } = useSpeechSynthesis();

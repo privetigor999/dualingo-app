@@ -15,7 +15,13 @@ const startSlice = createSlice({
       state.status = action.payload;
     },
     setName(state, action) {
-      state.name = action.payload;
+      state.name = action.payload
+        .split(" ")
+        .map(
+          (word: string) =>
+            word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase()
+        )
+        .join(" ");
     },
     setLanguage(state, action) {
       state.lang = action.payload;

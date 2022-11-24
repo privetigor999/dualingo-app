@@ -38,3 +38,19 @@
     }
   }
 }
+
+@media screen and (max-width: 575px) {
+  .errorContainer {
+    width: 300px;
+    .buttons {
+      button {
+        font-size: 15px;
+
+        padding: 0 20px;
+      }
+      button:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+}

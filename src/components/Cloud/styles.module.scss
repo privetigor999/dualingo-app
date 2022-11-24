@@ -3,12 +3,12 @@
   top: 10px;
   position: absolute;
   height: 120px;
-  -webkit-animation: move-left infinite 30s linear;
-  animation: move-left infinite 30s linear;
+  -webkit-animation: cloud-move infinite 30s linear;
+  animation: cloud-move infinite 30s linear;
   z-index: 0;
   overflow: hidden;
 }
-@keyframes move-left {
+@keyframes cloud-move {
   0% {
     right: -10%;
   }
@@ -36,5 +36,21 @@
   }
   100% {
     left: 0%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hello {
+    height: 50vh;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @keyframes hello-move {
+    0% {
+      left: -50%;
+    }
+    100% {
+      left: 0%;
+    }
   }
 }

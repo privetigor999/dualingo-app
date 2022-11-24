@@ -17,3 +17,14 @@
     }
   }
 }
+
+@media screen and (max-width: 575px) {
+  .loadingContainer {
+    width: 340px;
+    .loader {
+      h3 {
+        font-size: 20px;
+      }
+    }
+  }
+}

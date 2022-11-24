@@ -5,7 +5,7 @@ import { setStatus } from "../../store/features/questionSlice";
 import { setStartGame } from "../../store/features/statusGameSlice";
 import styles from "./styles.module.scss";
 
-export const Error = () => {
+export const Error: React.FC = () => {
   const dispatch = useAppDispatch();
   const { errorMessage } = useAppSelector((state) => state.question);
 

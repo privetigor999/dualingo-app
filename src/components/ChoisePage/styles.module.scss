@@ -181,8 +181,8 @@
         background: #c2c2c2;
         color: var(--blue);
       }
-      button:first-child {
-        margin-right: 20px;
+      button:nth-child(2) {
+        margin-left: 20px;
       }
     }
 
@@ -196,6 +196,175 @@
       top: -50%;
       left: 50%;
       transform: translateX(-50%);
+    }
+  }
+}
+
+// Responsive
+
+@media screen and (max-width: 799px) {
+  .choice {
+    .listCountries {
+      .listItem {
+        width: 300px;
+      }
+    }
+    .buttonBlock {
+      .buttons {
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .choice {
+    padding: 20px 30px;
+    .title {
+      font-size: 16px;
+    }
+    .listCountries {
+      .listItem {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 10px;
+      }
+      .listItem:first-child {
+        margin-top: 20px;
+      }
+    }
+    .nameBlock {
+      margin-top: 20px;
+      h6 {
+        font-size: 16px;
+      }
+      .name {
+        input {
+          height: 40px;
+          font-size: 24px;
+        }
+      }
+    }
+    .buttonBlock {
+      .buttons {
+        width: 300px;
+      }
+    }
+    .soundBlock {
+      width: 300px;
+      margin-top: 20px;
+      h6 {
+        font-size: 16px;
+      }
+      .soundButton {
+        button {
+          width: 105px;
+          height: 40px;
+        }
+      }
+    }
+    .buttonBlock {
+      margin-top: 40px;
+      .buttons {
+        width: 300px;
+
+        button {
+          height: 40px;
+          font-size: 16px;
+        }
+      }
+      .langError {
+        font-size: 14px;
+        padding-top: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .choice {
+    padding: 20px 30px;
+    .title {
+      font-size: 16px;
+      background-color: rgba($color: #6db2ff, $alpha: 0.7);
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+    }
+    .listCountries {
+      .listItem {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 10px;
+      }
+      .listItem:first-child {
+        margin-top: 10px;
+      }
+    }
+    .nameBlock {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      h6 {
+        font-size: 16px;
+        font-size: 16px;
+        background-color: rgba($color: #6db2ff, $alpha: 0.7);
+        width: 200px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+      }
+      .name {
+        input {
+          height: 40px;
+          font-size: 24px;
+        }
+      }
+    }
+    .buttonBlock {
+      .buttons {
+        width: 300px;
+      }
+    }
+    .soundBlock {
+      width: 300px;
+      margin-top: 20px;
+      h6 {
+        font-size: 16px;
+        background-color: rgba($color: #6db2ff, $alpha: 0.7);
+        width: 120px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+      }
+      .soundButton {
+        button {
+          width: 70px;
+          height: 40px;
+        }
+      }
+    }
+    .buttonBlock {
+      margin-top: 40px;
+      .buttons {
+        width: 300px;
+
+        button {
+          height: 40px;
+          font-size: 16px;
+        }
+      }
+      .langError {
+        font-size: 14px;
+        padding-top: 14px;
+      }
     }
   }
 }

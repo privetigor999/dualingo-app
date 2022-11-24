@@ -20,3 +20,40 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 799px) {
+  .description {
+    width: 576px;
+    padding: 0 30px;
+    img {
+      width: 230px;
+    }
+    div {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .description {
+    width: 341px;
+    img {
+      width: 140px;
+    }
+    div {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .description {
+    width: 320px;
+    img {
+      width: 130px;
+    }
+    div {
+      font-size: 14px;
+    }
+  }
+}

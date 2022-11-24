@@ -26,9 +26,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     p {
       font-size: 14px;
       margin-top: 4px;
+      text-align: center;
     }
   }
   .buttons {
@@ -63,5 +65,28 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .exitContainer {
+    width: 300px;
+    .alertQuestion {
+      font-size: 13px;
+      p {
+        font-size: 12px;
+      }
+    }
+    .buttons {
+      button {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .exitContainer {
+    width: 290px;
   }
 }

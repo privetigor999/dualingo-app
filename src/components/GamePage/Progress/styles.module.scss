@@ -59,3 +59,77 @@
     }
   }
 }
+
+@media screen and (max-width: 799px) {
+  .progressBlock {
+    width: 576px;
+    padding: 0 20px;
+    .progress {
+      width: 480px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .progressBlock {
+    width: 341px;
+    margin-top: 8px;
+    .closeBtn {
+      width: 16px;
+      height: 16px;
+    }
+    .progress {
+      width: 260px;
+      .nameAndLevelBlock {
+        .nameBlock {
+          font-size: 12px;
+          img {
+            width: 12px;
+            height: 12px;
+          }
+        }
+        .lvlBlock {
+          p {
+            font-size: 12px;
+          }
+          img {
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .progressBlock {
+    width: 320px;
+    margin-top: 8px;
+    .closeBtn {
+      width: 14px;
+      height: 14px;
+    }
+    .progress {
+      width: 240px;
+      .nameAndLevelBlock {
+        .nameBlock {
+          font-size: 12px;
+          img {
+            width: 12px;
+            height: 12px;
+          }
+        }
+        .lvlBlock {
+          p {
+            font-size: 12px;
+          }
+          img {
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+    }
+  }
+}

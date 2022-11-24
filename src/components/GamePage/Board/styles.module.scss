@@ -69,3 +69,71 @@
     }
   }
 }
+
+@media screen and (max-width: 799px) {
+  .board {
+    width: 516px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .board {
+    width: 300px;
+
+    .playerBoard {
+      height: 160px;
+      ul {
+        li {
+          font-size: 18px;
+          margin-bottom: 8px;
+          margin-right: 8px;
+        }
+      }
+    }
+    .dataBoard {
+      ul {
+        .itemList {
+          font-size: 14px;
+          margin-bottom: 8px;
+          margin-right: 8px;
+        }
+        .pickedItemList {
+          margin-bottom: 8px;
+          margin-right: 8px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .board {
+    width: 280px;
+
+    .playerBoard {
+      height: 160px;
+      ul {
+        li {
+          font-size: 18px;
+          margin-bottom: 8px;
+          margin-right: 8px;
+        }
+      }
+    }
+    .dataBoard {
+      ul {
+        .itemList {
+          font-size: 14px;
+          margin-bottom: 8px;
+          margin-right: 8px;
+        }
+        .pickedItemList {
+          margin-bottom: 8px;
+          margin-right: 8px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

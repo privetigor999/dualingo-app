@@ -28,3 +28,21 @@ code {
   min-height: 100vh;
   background-color: var(--blue);
 }
+
+@media screen and (max-width: 799px) {
+  .App {
+    width: 576px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .App {
+    width: 341px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .App {
+    width: 320px;
+  }
+}

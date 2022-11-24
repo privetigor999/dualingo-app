@@ -7,3 +7,25 @@
   cursor: pointer;
   text-decoration: #c2c2c2 underline dashed;
 }
+
+@media screen and (max-width: 799px) {
+  .taskTranslate {
+    width: 576px;
+    font-size: 24px;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .taskTranslate {
+    width: 341px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .taskTranslate {
+    width: 320px;
+    font-size: 18px;
+  }
+}

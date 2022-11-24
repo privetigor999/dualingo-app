@@ -22,3 +22,25 @@
     transform: scale(110%);
   }
 }
+
+@media screen and (max-width: 799px) {
+  .soundContainer {
+    top: 70px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .soundContainer {
+    top: 210px;
+    right: 20px;
+    .soundBlock {
+      width: 40px;
+      height: 40px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

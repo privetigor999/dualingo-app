@@ -23,7 +23,7 @@ export const WelcomePage: React.FC = () => {
         <h6>with Rilakkuma</h6>
       </div>
 
-      <p>free language education for the world</p>
+      <p>free language education for the whole world</p>
       <button onClick={clickStartBtn}>GET STARTED</button>
     </div>
   );

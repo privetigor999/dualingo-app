@@ -25,6 +25,7 @@
     color: #ffffff;
     font-size: 18px;
     z-index: 1;
+    text-align: center;
   }
   button {
     border: none;
@@ -46,5 +47,34 @@
   }
   button:active {
     color: darken($color: #6db2ff, $amount: 8);
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .welcomePage {
+    width: 576px;
+    div {
+      z-index: 2;
+    }
+    p {
+      z-index: 2;
+    }
+    button {
+      z-index: 2;
+      width: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .welcomePage {
+    width: 341px;
+
+    p {
+      font-size: 14px;
+    }
+    button {
+      width: 250px;
+    }
   }
 }

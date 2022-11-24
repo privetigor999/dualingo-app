@@ -8,3 +8,22 @@
   border-radius: 10px;
   position: relative;
 }
+
+@media screen and (max-width: 799px) {
+  .gamePage {
+    width: 575px;
+    border: 5px solid #6db2ff;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .gamePage {
+    width: 341px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .gamePage {
+    width: 320px;
+  }
+}
