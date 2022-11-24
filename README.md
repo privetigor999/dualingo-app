@@ -6,7 +6,7 @@
 
 ## 🎮 GitPage
 
-- https://github.com/privetigor999/dualingo-app/
+- https://privetigor999.github.io/dualingo-app/
 
 ## 🛠️ Tools:
 
