@@ -1,46 +1,27 @@
-# Getting Started with Create React App
+# Dualingo with Rilakkuma
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 💻 Review:
 
-## Available Scripts
+![til](./src/assets/gif/review.gif)
 
-In the project directory, you can run:
+## 🎮 GitPage
 
-### `npm start`
+- https://github.com/privetigor999/dualingo-app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🛠️ Tools:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- <b>React</b> <i>(основная библиотека)</i>
+- <b>Redux ToolKit</b> <i>(наш стейт-менеджмент)</i>
+- <b>TypeScript</b> <i>(типизация JavaScript'a)</i>
+- <b>axios</b> <i>(будем делать запрос для получения данных)</i>
+- <b>React Speech Kit</b> <i>(озвучка текста)</i>
+- <b>React Spinners</b> <i>(спиннер во время получения данных)</i>
+- <b>React Progress Bar</b> <i>(шкала получения опыта в приложении)</i>
+- <b>Redux Persist</b> <i>(все данные будут сохраняться в localStorage)</i>
+- <b>sass</b> <i>(стилизация нашего приложения)</i>
+- <b>useSound</b> <i>(звуки в приложении: клики, при наведении и т.д.)</i>
+- <b>MockApi</b> <i>(здесь хранятся наши данные)</i>
 
-### `npm test`
+## ℹ️ Описание
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Небольшая игра с уровнями, где вы должны помочь японскому медвежонку 🐻 Рилаккуме составить предложения на английском языке. Данная версия включает возможность выбрать только один язык (английский 🇬🇧) из трех представленных (еще французский 🇫🇷 и русский 🇷🇺). На этапе выбора меню вы пишите свое имя и опционально включаете/выключаете звуки в приложении (изначательно включено). Перед вами появится описание задания и само предложение для перевода. В нижней части приложения при помощи клика вы выбираете правильную последовательность перевода предложения, которое всегда добавляется в конец предложения. В случае неверного нажатия вы можете вернуть слово на обратное табло. Так же присутствует возможность включения/выключения звука во время игры 🎵. В случае верного ответа, вы увидите всплывающее окно с вашим опытом, уровнем. После прохождения всех уровней вас будет ждать развлекательное завершение приложения.
