@@ -1,6 +1,6 @@
 .choice {
   z-index: 3;
-  width: inherit;
+  max-width: 100vw;
   min-height: 100vh;
   display: flex;
   align-items: center;
