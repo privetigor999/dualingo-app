@@ -29,6 +29,7 @@ export const ChoisePage: React.FC = () => {
   const [valueSound, setValueSound] = React.useState(1);
   const [inputName, setInputName] = React.useState("");
   const [langError, setLangError] = React.useState(false);
+  const [maxLengthName, setMaxLengthName] = React.useState(false);
   const { toggleSound } = useAppSelector((state) => state.sound);
   const { lang } = useAppSelector((state) => state.start);
   const volume = toggleSound ? { volume: 0.6 } : { volume: 0 };
@@ -60,9 +61,14 @@ export const ChoisePage: React.FC = () => {
   };
 
   const changeSetName = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    setMaxLengthName(false);
+    if (e.target.value.length === 15) {
+      return setMaxLengthName(true);
+    }
     if (e.target.value.trim()) {
       return setInputName(e.target.value);
     }
+
     setInputName("");
   };
 
@@ -148,6 +154,7 @@ export const ChoisePage: React.FC = () => {
             onChange={changeSetName}
           />
         </div>
+        {maxLengthName && <p>Maximum length is 15 characters</p>}
       </div>
       <div className={styles.soundBlock}>
         <h6>Sound</h6>

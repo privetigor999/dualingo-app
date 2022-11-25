@@ -59,6 +59,7 @@
     }
   }
   .nameBlock {
+    position: relative;
     h6 {
       font-weight: 700;
       font-size: 30px;
@@ -85,6 +86,17 @@
       input::placeholder {
         color: #c2dcfb;
       }
+    }
+    p {
+      color: rgb(220, 72, 46);
+      text-align: center;
+      margin-bottom: 4px;
+      font-size: 18px;
+      width: 300px;
+      position: absolute;
+      top: 32px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
   .soundBlock {
@@ -244,6 +256,10 @@
           font-size: 24px;
         }
       }
+      p {
+        font-size: 14px;
+        top: 20px;
+      }
     }
     .buttonBlock {
       .buttons {
@@ -324,6 +340,10 @@
           height: 40px;
           font-size: 24px;
         }
+      }
+      p {
+        font-size: 14px;
+        top: 38px;
       }
     }
     .buttonBlock {
